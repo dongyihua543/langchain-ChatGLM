@@ -89,12 +89,12 @@ llm_model_dict = {
     },
 }
 
-# LLM 名称
+# LLM 名称 (init value: THUDM/chatglm-6b)
 LLM_MODEL = "vicuna-13b-hf"
-# 如果你需要加载本地的model，指定这个参数  ` --no-remote-model`，或者下方参数修改为 `True`
+# 如果你需要加载本地的model，指定这个参数  ` --no-remote-model`，或者下方参数修改为 `True` (init value: False)
 NO_REMOTE_MODEL = True
-# 量化加载8bit 模型
-LOAD_IN_8BIT = False
+# 量化加载8bit 模型 (init value: False)
+LOAD_IN_8BIT = True
 # Load the model with bfloat16 precision. Requires NVIDIA Ampere GPU.
 BF16 = False
 # 本地模型存放的位置
