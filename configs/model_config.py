@@ -106,7 +106,7 @@ LOAD_IN_8BIT = False
 # Load the model with bfloat16 precision. Requires NVIDIA Ampere GPU.
 BF16 = False
 # 本地模型存放的位置
-MODEL_DIR = "model/"
+MODEL_DIR = "/app/data/dongyihua/nlp/langchain-ChatGLM/model/"
 # 本地lora存放的位置
 LORA_DIR = "loras/"
 
