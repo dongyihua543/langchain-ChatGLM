@@ -99,7 +99,7 @@ llm_model_dict = {
 # LLM 名称 (init value: chatglm-6b)
 LLM_MODEL = "chatglm-6b"
 # 如果你需要加载本地的model，指定这个参数  ` --no-remote-model`，或者下方参数修改为 `True` (init value: False)
-NO_REMOTE_MODEL = True
+NO_REMOTE_MODEL = False
 # 量化加载8bit 模型 (init value: False)
 LOAD_IN_8BIT = False
 # Load the model with bfloat16 precision. Requires NVIDIA Ampere GPU.
