@@ -13,7 +13,8 @@ embedding_model_dict = {
     "ernie-tiny": "nghuyong/ernie-3.0-nano-zh",
     "ernie-base": "nghuyong/ernie-3.0-base-zh",
     "text2vec-base": "shibing624/text2vec-base-chinese",
-    "text2vec": "GanymedeNil/text2vec-large-chinese",
+    # "text2vec": "GanymedeNil/text2vec-large-chinese",
+    "text2vec": "/app/data/dongyihua/nlp/langchain-ChatGLM/model/GanymedeNil/text2vec-large-chinese",
 }
 
 # Embedding model name
