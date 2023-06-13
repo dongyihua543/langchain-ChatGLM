@@ -47,7 +47,7 @@ llm_model_dict = {
     "chatglm-6b": {
         "name": "chatglm-6b",
         "pretrained_model_name": "THUDM/chatglm-6b",
-        "local_model_path": None,
+        "local_model_path": '/app/data/dongyihua/models/chatglm-6b',
         "provides": "ChatGLM"
     },
 
@@ -66,7 +66,7 @@ llm_model_dict = {
     "vicuna-13b-hf": {
         "name": "vicuna-13b-hf",
         "pretrained_model_name": "vicuna-13b-hf",
-        "local_model_path": None,
+        "local_model_path": '/app/data/dongyihua/models/vicuna-13B-1.1-HF',
         "provides": "LLamaLLM"
     },
     # 额外新增
@@ -97,7 +97,7 @@ llm_model_dict = {
 }
 
 # LLM 名称 (init value: chatglm-6b)
-LLM_MODEL = "vicuna-7b-hf"
+LLM_MODEL = "chatglm-6b"
 # 如果你需要加载本地的model，指定这个参数  ` --no-remote-model`，或者下方参数修改为 `True` (init value: False)
 NO_REMOTE_MODEL = True
 # 量化加载8bit 模型 (init value: False)
