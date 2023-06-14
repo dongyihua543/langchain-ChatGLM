@@ -141,7 +141,7 @@ CACHED_VS_NUM = 1
 SENTENCE_SIZE = 100
 
 # 匹配后单段上下文长度 (init value: 250)
-CHUNK_SIZE = 300
+CHUNK_SIZE = 250
 
 # LLM input history length
 LLM_HISTORY_LEN = 3
