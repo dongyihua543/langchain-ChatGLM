@@ -129,6 +129,10 @@ def reinit_model(llm_model, embedding_model, llm_history_len, no_remote_model, u
         local_doc_qa.init_cfg(llm_model=llm_model_ins,
                               embedding_model=embedding_model,
                               top_k=top_k)
+        # 额外新增
+        generator = local_doc_qa.llm.generatorAnswer("你好", history=[])
+        for answer_result in generator:
+            print(answer_result.llm_output)
         model_status = """模型已成功重新加载，可以开始对话，或从右侧选择模式后开始对话"""
         logger.info(model_status)
     except Exception as e:

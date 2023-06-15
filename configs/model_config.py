@@ -16,7 +16,8 @@ embedding_model_dict = {
     "ernie-tiny": "nghuyong/ernie-3.0-nano-zh",
     "ernie-base": "nghuyong/ernie-3.0-base-zh",
     "text2vec-base": "shibing624/text2vec-base-chinese",
-    "text2vec": "GanymedeNil/text2vec-large-chinese",
+    # "text2vec": "GanymedeNil/text2vec-large-chinese",
+    "text2vec": "model/GanymedeNil/text2vec-large-chinese",
     "m3e-small": "moka-ai/m3e-small",
     "m3e-base": "moka-ai/m3e-base",
 }
@@ -55,7 +56,7 @@ llm_model_dict = {
     "chatglm-6b": {
         "name": "chatglm-6b",
         "pretrained_model_name": "THUDM/chatglm-6b",
-        "local_model_path": None,
+        "local_model_path": "model/chatglm-6b",
         "provides": "ChatGLM"
     },
 
@@ -70,6 +71,13 @@ llm_model_dict = {
         "pretrained_model_name": "fnlp/moss-moon-003-sft",
         "local_model_path": None,
         "provides": "MOSSLLM"
+    },
+    # 额外新增
+    "vicuna-7b-hf": {
+        "name": "vicuna-7b-hf",
+        "pretrained_model_name": "vicuna-7b-hf",
+        "local_model_path": None,
+        "provides": "LLamaLLM"
     },
     "vicuna-13b-hf": {
         "name": "vicuna-13b-hf",
@@ -143,8 +151,8 @@ LLM_HISTORY_LEN = 3
 # 知识库检索时返回的匹配内容条数
 VECTOR_SEARCH_TOP_K = 5
 
-# 知识检索内容相关度 Score, 数值范围约为0-1100，如果为0，则不生效，经测试设置为小于500时，匹配结果更精准
-VECTOR_SEARCH_SCORE_THRESHOLD = 0
+# 知识检索内容相关度 Score, 数值范围约为0-1100，如果为0，则不生效，经测试设置为小于500时，匹配结果更精准 (init value = 0)
+VECTOR_SEARCH_SCORE_THRESHOLD = 400
 
 NLTK_DATA_PATH = os.path.join(os.path.dirname(os.path.dirname(__file__)), "nltk_data")
 
