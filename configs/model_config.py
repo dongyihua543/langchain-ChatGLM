@@ -50,7 +50,7 @@ llm_model_dict = {
     "chatglm-6b-int8": {
         "name": "chatglm-6b-int8",
         "pretrained_model_name": "THUDM/chatglm-6b-int8",
-        "local_model_path": None,
+        "local_model_path": "model/chatglm-6b-int8",
         "provides": "ChatGLM"
     },
     "chatglm-6b": {
@@ -76,13 +76,13 @@ llm_model_dict = {
     "vicuna-7b-hf": {
         "name": "vicuna-7b-hf",
         "pretrained_model_name": "vicuna-7b-hf",
-        "local_model_path": None,
+        "local_model_path": "model/vicuna-7b-hf",
         "provides": "LLamaLLM"
     },
     "vicuna-13b-hf": {
         "name": "vicuna-13b-hf",
         "pretrained_model_name": "vicuna-13b-hf",
-        "local_model_path": None,
+        "local_model_path": "model/vicuna-13b-hf",
         "provides": "LLamaLLM"
     },
 
