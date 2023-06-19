@@ -413,7 +413,7 @@ def api_start(host, port):
     global app
     global local_doc_qa
 
-    llm_model_ins = shared.loaderLLM()
+    llm_model_ins = shared.loaderLLM(no_remote_model=True)
     llm_model_ins.set_history_len(LLM_HISTORY_LEN)
 
     app = FastAPI()
